@@ -2,6 +2,9 @@ from setuptools import setup, find_packages
 
 VERSION='0.1'
 
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 classifiers = ['Operating System :: Microsoft :: Windows :: Windows 10',
                 'License :: OSI Approved :: MIT License',
                 'Programming Language :: Python :: 3']
@@ -9,7 +12,7 @@ classifiers = ['Operating System :: Microsoft :: Windows :: Windows 10',
 setup(name='Custom_sklearn',
       version=VERSION,
       description='just sample only',
-      long_description = open("README.md", "r", encoding="utf-8").read() + '\n\n' + open("CHANGELOG.txt", "r", encoding="utf-8").read(),
+      long_description = long_description,
       long_description_content_type="text/markdown",
       url = "https://github.com/AI-kartheek/Pypi-Self-Packages/KarthiSource",
       author='Kartheek07',
